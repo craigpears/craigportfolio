@@ -1,0 +1,147 @@
+<div class="intro-section">
+  <div class="mask">
+    <div class="content">
+      <h1 id="intro-content">Hi, I'm Craig :)</h1>
+      <p>I'm a full stack developer.  I love what I do and especially love making things in pet projects, so I created this website to display what I've been up to over the years!</p>
+    </div>
+  </div>
+</div>
+
+<div id="project-links" [class.fixed]="fixed">
+  <div class="project-link" [class.active]="activeSection == 'homeworkoutapp'">
+    <div (click)="scrollTo('homeworkoutapp')" class="project-link-inner" data-test-id="homeworkoutappProjectLink">
+      Home Workout App
+    </div>
+  </div>
+  <div class="project-link" [class.active]="activeSection == 'sqlconfidence'">
+    <div (click)="scrollTo('sqlconfidence')" class="project-link-inner" data-test-id="sqlconfidenceProjectLink">
+      SQL Confidence
+    </div>
+  </div>
+  <div class="project-link" [class.active]="activeSection == 'dachimpycom'">
+    <div (click)="scrollTo('dachimpycom')" class="project-link-inner" data-test-id="dachimpycomProjectLink">
+      Dachimpy.com
+    </div>
+  </div>
+  <div class="project-link" [class.active]="activeSection == 'blockadesimulator'">
+    <div (click)="scrollTo('blockadesimulator')" class="project-link-inner" data-test-id="blockadesimulatorProjectLink">
+      Blockade Simulator
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="wrapper">
+  <div class="projects-section">
+    <div class="project-header" id="homeworkoutapp-project" data-test-id="homeworkoutappProjectHeader">Home Workout App</div>
+    <div class="project">
+      <div class="project-inner">
+        <div class="project-summary">
+          <div class="project-thumbnail-container">
+            <img class="project-thumbnail-image" src="assets/homeworkoutapp_cropped.jpg" />
+          </div>
+          <div class="project-goals">
+            <div class="project-goals-inner">
+              <h3>Project Goals</h3>
+              <ul>
+                <li>Learn mobile development</li>
+                <li>Learn Xamarin</li>
+                <li>Practice unit testing</li>
+                <li>Practice clean code</li>
+                <li>Practice agile techniques</li>
+                <li>Gain user perspective</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="project-story" [class.readmore]="homeworkoutapp_readmore">
+          <div class="content">
+            <h3>Story</h3>
+            <p>I had just gotten a new car and was driving along when I heard a beep warning me that I was running low on fuel.  I thought this was the absolute best thing in the world, the car has automated checking when I'm low on fuel for me!</p>
+            <p>I then started thinking wait.. I'm a software developer.  I didn't feel that I should be so impressed by something so simple.  At this point it dawned on me that I had spent a career creating tools to help businesses or other people, but never created anything for my own benefit.  That seemed like a pretty important perspective to get and so this project was born!</p>
+            <p>I was going through physio for a bad back injury at the time and I knew that I had a bad habit of pushing myself hard instead of being consistent, which would lead to be burning out.  This app was going to be awesome and help me break that bad cycle!</p>
+            <p>In agile fashion, I started with the simplest thing that would be useful.  At first, this was my whiteboard:</p>
+            <img class="project-thumbnail-image" src="assets/homeworkoutapp_prototype.jpg" />
+            <p>I had great ambitions about all the great things that this phone app would do for me.  I can't even remember what they were now but I do remember that in the end, the most fantastic thing was that the app acted like a calculator and added up my number of reps so that I didn't have to.</p>
+            <div class="project-thumbnail-container">
+              <div class="project-thumbnail-image cropped" style="background-image: url('assets/homeworkoutapp_tablet_landscape.jpg');"></div>
+            </div>
+            <p>The app slowly evolved and I learned a lot about mobile development and gained a lot of perspective about what features were helpful.</p>
+          </div>
+          <button (click)="homeworkoutapp_readmore = true;">Read more</button>
+        </div>
+      </div>
+    </div>
+    <div class="project-header" id="sqlconfidence-project" data-test-id="sqlconfidenceProjectHeader">SQL Confidence</div>
+    <div class="project">
+      <div class="project-inner">
+        <div class="project-summary">
+          <div class="project-thumbnail-container">
+            <img class="project-thumbnail-image" src="assets/sqlconfidence.jpg" />
+          </div>
+          <div class="project-goals">
+            <div class="project-goals-inner">
+              <h3>Project Goals</h3>
+              <ul>
+                <li>Experiment with different technologies</li>
+                <li>Experiment with architecture</li>
+                <li>Teaching & Mentoring</li>
+                <li>Discovering the impact of decision making - do engineering ideals lead to a successful app?</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>    
+    <div class="project-header">SQL Confidence Game</div>
+    <div class="project" id="sqlconfidencegame-project">
+      <div class="project-inner">
+        <div class="project-summary">
+          <div class="project-thumbnail-container">
+            <img class="project-thumbnail-image" src="assets/sqlconfidencegame.jpg" />
+          </div>
+          <div class="project-goals">
+            <div class="project-goals-inner">
+              <h3>Project Goals</h3>
+              <ul>
+                <li>Experiment with gamification</li>
+                <li>Explore focusing on simplicity and intuitive UX design for SQL Confidence</li>
+                <li>Practice prototyping</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="project-header" id="dachimpycom-project" data-test-id="dachimpycomProjectHeader">Dachimpy.com</div>
+    <div class="project">
+      <div class="project-inner">
+        <div class="project-summary">
+          <div class="project-thumbnail-container">
+            <img class="project-thumbnail-image" src="assets/dachimpy_cropped.jpg" />
+          </div>
+          <div class="project-goals">
+            <div class="project-goals-inner">
+              <h3>Project Goals</h3>
+              <ul>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <a href="http://www.dachimpy.com">Visit Site</a>
+      </div>
+    </div>
+    <div class="project-header" id="blockadesimulator-project" data-test-id="blockadesimulatorProjectHeader">Blockade Simulator</div>
+    <div class="project">
+      <div class="project-inner">
+        <img class="project-thumbnail-image" src="assets/blockadesim.jpg" />
+        <a href="http://www.dachimpy.com/applications/view/application_id/10">Try single player</a>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
